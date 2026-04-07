@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+  class User {
+    constructor(name, role, rate){
+    this.name = name,
+    this.role = role,
+    this.rate = rate;
+    }
+
+    hasPermission(permission){
+      return this.role === 'admin';
+    }
+  }
+
+  const user1 = new User('Ivan', 'admin', '99')
+  const user2 = new User('Slarto', 'editor', '99')
+</script>
+</html>
